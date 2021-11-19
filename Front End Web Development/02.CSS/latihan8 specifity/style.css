@@ -1,0 +1,18 @@
+/* kenapa #p1 warna yg muncul #p1= inline 1000 id=100 class=10 element/p=1 */
+                             
+#p1 {
+    color: red;
+}
+
+p {
+    color: green;
+}
+
+/* nilai 0102 */
+ul#sarapan li {
+    color: green;
+}
+/* nilai 0112 */
+ul#sarapan li.favorit {
+    color: red;
+}

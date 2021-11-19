@@ -1,0 +1,49 @@
+/* pseudo class 1 error */
+
+.hello:link {
+    color: orange;
+}
+
+.hello:hover {
+    font-size: 30px;
+    font-family: arial;
+    color: green;
+}
+
+.hello:active {
+    font-style: italic;
+}
+
+.hello:visited {
+    color: black;
+}
+
+/* pseudo class 2  first-child(pertama),last-child(terakhir),nth-child(target spesifik)*/
+
+li:first-child a {
+    color: green;
+}
+
+li:last-child a {
+    color: yellowgreen;
+}
+/* untuk kelipan 3n=setiap kelipatan 3 kalau dari 1=3n-2 tmbhkan -/+ u memulai
+even u genap add u ganjil */
+
+li:nth-child(3n-2) a {
+    color: aqua;
+}
+
+li:nth-child(add) a:hover {
+    color: black;
+}
+
+/* untuk paragraf menggunakan first-of-tye dan last-of-type */
+
+p:first-of-type {
+    color: chartreuse;
+}
+
+p:last-of-type {
+    color: deeppink;
+}
