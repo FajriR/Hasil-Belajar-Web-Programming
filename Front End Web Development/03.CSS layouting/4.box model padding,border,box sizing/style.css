@@ -1,0 +1,36 @@
+/* padding digunakan u memberikan jarak antara sebuah kotak dan tulisan di dlmny
+sifat padding
+ 1.padding tdk bisa di kasi nilai negatif tdk sm dgn margin
+ 2.padding tidak memiliki nilai auto 
+ 3.padding menanmbah ukuran elemen 
+ 
+ border 
+ - bisa di tulis 3 isian
+ - style ada 4 ; solid, dotted, dashed, double 
+ - menambahkan ukuran keseluruhan
+ 
+ border box(box sizing)
+ - akan membuat lebar boxny konstan berapapun padding yg d kasi*/
+
+
+div {
+    width: 600px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.satu {
+    background-color: royalblue;
+    padding: 10px;
+    border: 15px solid red;
+    /*600px-10x2-5x2=570px  */
+   
+}
+
+.dua {
+    background-color: lightgreen;
+    padding: 30px;
+    border: 10px dashed orange;
+    /* 600px-30x2-10x2=520px */
+    
+}

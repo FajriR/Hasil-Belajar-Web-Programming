@@ -1,0 +1,19 @@
+
+.container {
+    width: 600px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 5px;
+}
+/* begitu di kasi float berarti dia keluar dari flow shg container tdk menganggap d dlmn ad kotak */
+.kotak {
+    width: 80px;
+    height: 80px;
+    color: white;
+    background-color: brown;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    margin: 2px;
+    float: left;
+}

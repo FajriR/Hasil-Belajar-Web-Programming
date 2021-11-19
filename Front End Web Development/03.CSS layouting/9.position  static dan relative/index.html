@@ -1,0 +1,72 @@
+<!-- position=memungkinkan kita u menggeser elemen tanpa mempengaruhi elemn d sekitarny
+ value:
+1.static
+ - static adl nilai default dari tiap2 elemen ketika tdk d beri properti posistion
+ - menggunakan selain static akan membuat elemen mnjd seolah berbeda dimensi dgn elemen lainny
+ - elemen yg di beri position static dpt menggunakan properti top,left,right dan bottom
+
+2.relative= ibarat 3 dimensi maju 1 blok k depan
+ -ketika menggerakan elemen dgn posisi relative(top,right,leftdan bottom) ruang yg d tmpati elemen tsbmshada
+ - ketika kt menggerakan elemen k posisi relative,elemen akan bergerak relatif thd posisi semulany
+ - jika kt memberi properti top:0 dan left:0, maka elemen tdk berubah posisiny
+
+3.absolute
+
+4.fixed -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba Position</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+        }
+        .satu {
+            background-color: black;
+        }
+        .dua {
+            background-color: lightgreen;
+            /* mempengaruhi elemen yg ada d bwhny */
+            margin-left:30px ;
+            margin-top: 30px;
+            
+        }
+        .tiga {
+            background-color: red;
+        }
+
+        .empat {
+            background-color: black;
+        }
+        .lima {
+            background-color: blue;
+            /* ibarat 3d maju 1 elemen dan ruang yg digeser masih ada */
+            position:relative ;
+            top: 30px;
+            left: 50px;
+        }
+        .enam{
+            background-color: blueviolet;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+    <br><br><br>
+    <div class="empat"></div>
+    <div class="lima"></div>
+    <div class="enam"></div>
+    
+</body>
+</html>

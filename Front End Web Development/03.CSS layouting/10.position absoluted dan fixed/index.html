@@ -1,0 +1,100 @@
+<!-- position=memungkinkan kita u menggeser elemen tanpa mempengaruhi elemn d sekitarny
+ value:
+1.static
+ - static adl nilai default dari tiap2 elemen ketika tdk d beri properti posistion
+ - menggunakan selain static akan membuat elemen mnjd seolah berbeda dimensi dgn elemen lainny
+ - elemen yg di beri position static dpt menggunakan properti top,left,right dan bottom
+
+2.relative= ibarat 3 dimensi maju 1 blok k depan
+ -ketika menggerakan elemen dgn posisi relative(top,right,leftdan bottom) ruang yg d tmpati elemen tsbmshada
+ - ketika kt menggerakan elemen k posisi relative,elemen akan bergerak relatif thd posisi semulany
+ - jika kt memberi properti top:0 dan left:0, maka elemen tdk berubah posisiny
+
+3.absolute
+ - ketika kita menggerakan elemen dgn posisi absolute(menggunakan properti top,left,bottom dan right)
+   ruang yg d tmpati elemen tsb dianggap tdk ada.
+ - ketika kita menggerakan elemen dgn posisi absolute,elemen akan bergerak relatif thd posisi dr elemen
+   parentny ,slm elemen parentny memiliki posisi yg jg non-static
+ - jika kt memberi properti top,0 dan left,0 maka elemen  akan brada d ujung kiri atas dr elemen parentny
+
+4.fixed 
+ - ketika kita menggerakan elemen dgn posisi fixed(menggunakan properti top,left,bottom dan right)
+   maka dia seallu bergerak relative thd window browserny
+ - ketika kita scrol si element fixed akan d kunci d browser tsb mngikuti scrol
+
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba Position</title>
+
+    <style>
+        body {
+            height: 2000px;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            margin: auto;
+           
+        }
+        .satu {
+            background-color: black;
+        }
+        .dua {
+            background-color: lightgreen;
+            /* maju 1 dimensi */
+            position: relative;
+            
+        }
+        .tiga {
+            background-color: red;
+        }
+
+        .empat {
+            background-color: black;
+            
+        }
+        .lima {
+            background-color: blue;
+            /* biru menghimpit kotak yg bwh */
+            top: 0;
+            left: 0;
+            position: absolute;
+        
+        
+        }
+        .enam{
+            background-color: blueviolet;
+        }
+
+        .container {
+            width: 600px;
+            height: 650px;
+            border: 10px solid green;
+            margin: auto;
+            /* naik 1 dimensi spy kotak biru tdk kluar jalur */
+            position: relative;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+    <br><br><br>
+    <div class="container">
+    <div class="empat"></div>
+    <div class="lima"></div>
+    <div class="enam"></div>
+</div>
+
+</body>
+</html>

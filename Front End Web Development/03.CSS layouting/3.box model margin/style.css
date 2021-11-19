@@ -1,0 +1,123 @@
+
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    /* 1.contoh penggunaan margin kalo k bwh margin yg d ambil yg paling besar/vertikal */
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-right: 50px;
+}
+
+.dua {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin-top: 50px;
+}
+
+.tiga {
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+}
+
+/* 2.overlapping margin kesamping margin nmbah kiri dan kanan /horizontal */
+.empat {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.lima {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    display: inline-block;
+}
+
+.enam {
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    display: inline-block;
+}
+
+/* 3.negatif margin */
+.tujuh {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin-bottom: 30px;
+}
+
+.delapan {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+.sembilan {
+    width: 50px;
+    height: 50px;
+    background-color: cornflowerblue;
+}
+
+/* auto */
+.sepuluh {
+    width: 200px;
+    height: 200px;
+    background-color:blueviolet;
+    margin-left: auto;
+    margin-right:auto; 
+}
+
+.sebelas {
+    width: 100px;
+    height: 100px;
+    background-color:chocolate;
+    margin-left: auto;
+    margin-right:auto; 
+  
+}
+
+.duabelas {
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    margin-left: auto;
+    margin-right:auto; 
+}
+
+/* shorthand */
+.tigabelas {
+    width: 200px;
+    height: 200px;
+    background-color:blueviolet;
+    /* 30=atas  50=kiri dan kanan 40=bawah*/
+    margin: 30px 50px 40px; 
+    
+    
+}
+
+.empatbelas {
+    width: 100px;
+    height: 100px;
+    background-color:chocolate;
+       /*baca searah jarum jam  */
+    margin: 10px 20px 30px 40px;
+  
+}
+
+.limabelas {
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    
+}
+

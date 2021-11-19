@@ -1,0 +1,13 @@
+/*  * adalah selector universal atau u semuany */
+
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+body, h1, p, h2 {
+    margin: 0;
+    padding: 0;
+}

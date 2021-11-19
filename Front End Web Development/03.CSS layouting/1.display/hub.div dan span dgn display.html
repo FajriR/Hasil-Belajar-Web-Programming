@@ -1,0 +1,130 @@
+<!--  div display defaulny adl block dan span default displayny adl inline
+value displayada 4:
+1.inline
+  #1 element htnl yg scr default tdk mnmbahkan baris baru ketika di buat
+  #2 lebar dan tinggi elemenny sebesar konten yg ada d dlmny
+  #3 kita tdk dpt mengatur tinggi dan lebar dari elemen inline(kecuali yg berbentuk gamabr)
+  #4 margin dan padding hanya mempengaruhi elemenn scr horizontal,tidak vertikal
+
+  element inline
+  b,strong,i,em,a,span,sub,sup,button,input,label,select,textarea
+
+
+2.inline-block
+  ##1 tidak ada element yg scr default memiliki properti display: inline-block
+  ##2 kita harus ubah scr manual properti tsb
+  ##3 perilaku dasarny sm dgn elemen inline
+  ##4 perbedaany,elemen inline-block dpt kita atur tinggi dan lebarny
+
+
+3.block
+  ###1 elemen html yg scr default menambahkan baris baru ktika d buat
+  ###2 jika tdk d atur lebarny,maka lebar default darielement block akan memenuhi
+       lebar dr browser/parentny
+  ###3 kita dpt mengatur tinggi dan lebar dari elemen block
+  ###4 di dlm elemen block,kita dpt menyimpan tag dgn elemen inline,inline-block
+       atau bahkan element block lg.
+
+    elemen block
+    h1-h6, p, ol, ul, li, form, hr, div,..
+
+
+4.none
+  #### digunakan u menghilangkan sebuah elemen
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+</head>
+<body>
+
+    <style>
+        a {
+            background-color: pink;
+            /* #3 lebar dan tinggi tdk berpengaruh*/
+            width: 200px;
+            height: 200px;
+            /* ## contoh inline block*/
+            display: inline-block;
+        }
+       /*   contoh perilaku element block/### */
+        img { width: 300px; height: 300px;}
+
+        .main {
+            background-color: goldenrod;
+            width: 600px;
+        }
+        .main h2 {
+            background-color: hotpink;
+        }
+
+        /* contoh none #### */
+         .navigasi h2 {
+             display: none;
+         }
+
+         .navigasi li {
+             display: inline;
+         }
+    
+    </style>
+
+<div class="header">
+
+        <h1>Selamat Datang Di Website Kami</h1>
+</div>
+
+
+<div class="navigasi">
+
+    <h2>Daftar Link</h2>
+<!-- #2 -->
+    <a href="#">ini adalah link 1</a>
+    <a href="#">link 2</a>
+    <a href="#">link 3</a>
+    <a href="#">link 4</a>
+    <!-- #1 link5 berada d smping bkn d bwh spt block -->
+    <a href="#">link 5</a>
+
+   <ul>
+       <li><a href="#">link 1</a></li>
+       <li><a href="#">link 2</a></li>
+       <li><a href="#">link 3</a></li>
+       <li><a href="#">link 4</a></li>
+       <li><a href="#">link 5</a></li>
+   </ul>
+     
+</div>
+
+
+<div class="main">
+
+    <h2>Judul Artikel</h2>
+    <h2>Judul Artikel</h2>
+    <img src="gambar1.png" alt="" height="200px">
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aut quidem
+        commodi tenetur voluptates voluptate cupiditate velit? Iste quo quis sit eum
+        quasi, perferendis natus, <span>magni provident veritatis libero</span> porro.</p>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ullam harum
+        hic aperiam quia in illum, expedita suscipit consequatur qui corrupti culpa
+        ratione eos consectetur. Voluptatibus exercitationem odio ducimus nisi.</p>
+</div>
+
+
+<div class="copyright">
+
+        <p><strong>copyright 2021.Web FAJRI RAMADHAN</strong></p>
+</div>
+
+
+</body>
+</html>
