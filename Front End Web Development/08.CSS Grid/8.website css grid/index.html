@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merchandise</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=STIX+Two+Math&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2 class="heading">Merchadise Shop</h2>
+          <p class="sub-heading">Kaos Polos Distro</p>
+        </div>
+        <div class="features feature-1">
+          <h4 class="price">IDR 150K</h4>
+          <p class="item">Kaos Satu</p>
+        </div>
+        <div class="features feature-2">
+          <h4 class="price">IDR 100K</h4>
+          <p class="item">Kaos Dua</p>
+        </div>
+      </header>
+
+      <nav class="menu">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand">
+          <h1>Merchandise</h1>
+        </div>
+        <ul class="menu-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <section class="services">
+        <div class="service">
+          <div class="icon">💻</div>
+          <h3>Tutorial</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae impedit id reiciendis voluptatem quasi recusandae?</p>
+        </div>
+        <div class="service">
+          <div class="icon">🎓</div>
+          <h3>Online Course</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae impedit id reiciendis voluptatem quasi recusandae?</p>
+        </div>
+        <div class="service">
+          <div class="icon">🎙</div>
+          <h3>Podcast</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae impedit id reiciendis voluptatem quasi recusandae?</p>
+        </div>
+        <div class="service">
+          <div class="icon">🥼</div>
+          <h3>Merchandise</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae impedit id reiciendis voluptatem quasi recusandae?</p>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2>Gallery</h2>
+        <img src="img/kaos1.jpg" alt="" />
+        <img src="img/kaos2.png" alt="" />
+        <img src="img/kaos1.jpg" alt="" />
+        <img src="img/kaos2.png" alt="" />
+        <img src="img/kaos1.jpg" alt="" />
+        <img src="img/kaos2.png" alt="" />
+        <img src="img/kaos1.jpg" alt="" />
+        <img src="img/kaos2.png" alt="" />
+        <img src="img/kaos1.jpg" alt="" />
+        <img src="img/kaos2.png" alt="" />
+      </section>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
