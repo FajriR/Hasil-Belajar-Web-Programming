@@ -1,0 +1,30 @@
+.container a:hover {
+  background-color: orange;
+  font-size: 40px;
+  color: black;
+}
+.slide h3,
+.slider h5 {
+  text-shadow: 3px 3px 5px rgba(255, 255, 255.5);
+}
+.container ul li:hover a {
+  background-color: orange;
+  color: black;
+  font-size: 20px;
+}
+
+.parallax-container {
+  height: 50%;
+}
+
+.clients h3 {
+  text-shadow: 5px 1px 10px rgba(255, 255, 255, 0.5);
+}
+.clients img {
+  position: cover;
+  padding: 10px;
+}
+section,
+footer {
+  padding: 10px 0;
+}
