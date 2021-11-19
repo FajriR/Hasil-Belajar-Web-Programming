@@ -1,0 +1,20 @@
+/* jumbotron */
+.jumbotron {
+  color: white;
+  padding-top: 6rem;
+  background-color: #d3d3d3;
+  background-image: url(img/lambo.png);
+  background-size: cover;
+  background-position: 0 -60px;
+}
+
+.jumbotron img {
+  box-shadow: 1px 1px 50px rgba(255, 255, 255, 1);
+}
+/* project */
+#project {
+  background-color: #d3d3d3;
+}
+.section {
+  padding-top: 6rem;
+}
