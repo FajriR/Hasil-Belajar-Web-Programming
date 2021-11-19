@@ -1,0 +1,43 @@
+<!-- tipe filter = angka/%
+- blur
+- brightness
+-contrast
+-saturate
+-grayscale
+-sepia
+-hue-rotate
+-invert
+-opacity
+drop-shadow -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Filter</title>
+    <style>
+
+        body {
+            text-align: center;
+        }
+
+        img {
+            filter: blur(10px) grayscale(1);
+        }
+
+        img:hover {
+            filter: blur(0px) grayscale(0);
+            transition: 2s;
+            
+          
+        }
+    </style>
+</head>
+<body>
+
+    <img src="640x480.jpg" alt="foto">
+
+    
+</body>
+</html>

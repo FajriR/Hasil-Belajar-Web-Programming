@@ -1,0 +1,46 @@
+
+<!-- TRANSITION = digunakan u mengubah nilai dari properti HTML scr halus
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Transition</title>
+     <style>
+         body {
+             margin: 0;
+             padding: 0;
+         }
+
+         .container {
+             width: 900px;
+             margin: 10px auto;
+             border: 5px solid black;
+         }
+
+         .kotak {
+             width: 100px;
+             height: 100px;
+             background-color: salmon;
+             /* contoh fungsi */
+             transition:margin-left 3s, trasform 3s 2s, background-color 500ms 3s;;
+         }
+
+         .container:hover .kotak {
+             transform: rotate(360deg);
+             margin-left: 800px;
+             background-color: blue;
+         }
+
+     </style>
+ </head>
+ <body>
+     <div class="container">
+    <div class="kotak"></div>
+</div>
+     
+ </body>
+ </html>
+

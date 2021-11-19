@@ -1,0 +1,56 @@
+<!-- ANIMATION
+1,name
+2,duration
+3.timing-function
+4.delay
+5.iteration-count(angka,infinite)
+6.direction (normal,reverse,alternate,alternate-reverse)
+7.fill-mode (none,forwards,backwards,both)
+8.playstate (running,paused)-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .kotak {
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+        }
+        .kotak:hover {
+            animation: animasikotak 2s ease 2 alternate;
+            /* 
+            animation-name: animasikotak;
+            animation-duration: 2s;
+            animation-timing-function:ease;
+            animation-iteration-count:infinite */
+
+        }
+        @keyframes animasikotak {
+            0% {
+                width: 200px;
+            }
+            50% {
+                width: 500px;
+                height: 200px;
+            }
+            100% {
+                width: 500px;
+                height: 500px;
+            }
+           
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="kotak"></div>
+    
+</body>
+</html>

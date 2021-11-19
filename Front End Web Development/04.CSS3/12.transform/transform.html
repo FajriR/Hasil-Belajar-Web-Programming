@@ -1,0 +1,41 @@
+
+<!-- TRANSFORM = digunakan u memanipulasi format visual pd html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+        /* scale(angka), scalex(angka), scaley(angka)
+           rotate(deg),  rotatex(deg),  rotatey(deg)
+           translate(px),  translatex(px),  translate(px) */
+
+        .kotak {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto 0;
+            transition: 1s;
+        }
+
+        .kotak:hover {
+            transform: scale(3);
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kotak"></div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni modi neque praesentium. Voluptates
+     autem, ut delectus voluptatem, incidunt provident repellat odio nostrum reprehenderit sapiente
+    necessitatibus earum nam eligendi. Perferendis, aliquid.</p>
+    
+</body>
+</html>

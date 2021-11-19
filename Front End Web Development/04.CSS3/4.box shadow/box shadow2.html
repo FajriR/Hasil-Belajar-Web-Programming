@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: #39b54a;
+            margin: 50PX auto;
+            /* x-offset y-offset blur color  spread(pembesar/kecil bayangan beradad luar kotakny*/
+            box-shadow: 0px 30px 10px -20px rgba(0,0,0,0.75);
+            transition: 1s;
+        }
+
+        div:hover {
+            box-shadow: 0px 80px 10px -40px rgba(0,0,0,.15);
+            margin-top: 40px;
+        }
+
+        .satu {
+            width: 300px;
+            height: 300px;
+            background-color: #39b54a;
+            margin: 50px auto;
+            /* inset di gunakan u memindahkan bay.ke dlm elemen */
+            box-shadow: inset 0 0 30px 10px rgba(0,0,0,0.5);
+        }
+
+        .dua {
+            width: 300px;
+            height: 300px;
+            background-color: lightcoral;
+            box-shadow: 0px 0px 0px 5px red,
+            0 0 0 10px green,
+            0 0 0 20px black,
+            0 0 0 40px yellow;
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div></div>
+    <br><br><br><br><br>
+    <div class="satu"></div>
+    <br><br><br><br><br>
+    <div class="dua"></div>
+    
+</body>
+</html>

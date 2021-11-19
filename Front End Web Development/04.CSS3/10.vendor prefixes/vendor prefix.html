@@ -1,0 +1,31 @@
+<!-- 
+    - sintaks khusus yg hrus d tambahkan u beberapa property css3
+    -webkit-<properti-css3>  = chrome,safari,opera versi terbaru
+    -moz-<properti-css3>  = firefox
+    -ms-<properti-css3>   = internet explorer
+    -o-<properti-css3>  = opera versi terdahulu
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Coba Prefixes</title>
+     <style>
+         body {
+             text-align: center;
+         }
+         img {
+             -webkit-filter: grayscale(100%);
+             /* filter memberikan efek pada gambar tanpa webkit filter bisa*/
+             filter: grayscale(1000%);
+             
+     </style>
+ </head>
+ <body>
+     <img src="640x480.jpg" alt="facebook">
+     
+ </body>
+ </html>
