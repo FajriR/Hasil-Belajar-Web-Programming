@@ -1,0 +1,54 @@
+<!-- FLEXBOX
+
+model layout 1 dimensi yg dpt mengatur jarak dan penjajaran antar item dlm sebuah container
+
+flexbox layout module
+sebuah modul yg mnawarkan cara yg efektif u menyusun,mensejajarkan dan mendistribusikan jarak antar item
+di dlm container ,meskipun ukurannya dinamis atau bahkan kita tdk tahu.
+
+istilah flexbox
+*main axis - sumbu utama dari sebuah container yg menentukan urutan dari penempatan items scrhorizontal
+*main satart & main end - mulai dan berakhirnya item yg d simpan di dlm container
+*main size - ukuran width/height dari container yg akan membuat dimensi dari item ny relatif thd main size.
+
+(properti dm container)
+flex-directin 
+=untuk mengatur arah/urutan dari items di dlm container
+
+flex-wrap
+= untuk mengatur ketika sebuah elemen tdk muat lg dlm container
+
+justify-content
+= untuk mengatur rata elemen2 yg ada d dlmny scr horizontal.
+
+align-item
+= untuk mengatur kesejajaran antar item scr verikal
+align-content
+= mengatur jarak antar item thd cross axis hanya berlaku ketika conteny lebih dari 1 baris
+
+(propertidlm item)
+1.order=untuk mengganti posisi itemny
+2.flex-grow = untuk mengatur ukuran itemny
+3.align-self = untuk mengatur ukuran 1 elemn saja-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flex Box</title>
+</head>
+<body>
+    <div class="container">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+
+    </div>
+    
+</body>
+</html>
