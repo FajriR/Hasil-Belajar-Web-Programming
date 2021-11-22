@@ -3,16 +3,17 @@ require 'functions.php';
 
 // cek apakah tambah sudah di tekan
 if (isset($_POST["tambah"])) {
+  
   if(tambah($_POST) > 0 ) {
     echo "<script>
           alert('data berhasil di tambahkan');
-          document.location.href = 'latihan3.php';
+          document.location.href = 'index.php';
           </script>
           ";
   } else {
     echo "<script>
          alert('data berhasil di tambahkan');
-         document.location.href = 'latihan3.php';
+         document.location.href = 'index.php';
          </script>
          ";
   }
