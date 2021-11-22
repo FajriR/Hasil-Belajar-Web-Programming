@@ -1,5 +1,11 @@
 <?php
 
+// jika tidak ada id di url
+// if (!isset($_GET['id'])) {
+//   header("Location:index.php");
+//   exit;
+// }
+
 function koneksi()
 {
   return mysqli_connect('localhost', 'root', '', 'phpdasar');
@@ -29,7 +35,7 @@ function tambah($data)
 
   $nama = htmlspecialchars($data['nama']);
   $asal = htmlspecialchars($data['asal']);
-  $email = htmlspecialchars($data['emai']);
+  $email = htmlspecialchars($data['email']);
   $jurusan = htmlspecialchars($data['jurusan']);
   $gambar = htmlspecialchars($data['gambar']);
 
@@ -38,7 +44,37 @@ function tambah($data)
            VALUES
            (null, '$nama','$asal','$email','$jurusan',$gambar);
            ";
-  mysqli_query($db, $query);
-  echo mysqli_error($db);
+  mysqli_query($db, $query) or die(mysqli_error($db));
+  return mysqli_affected_rows($db);
+}
+
+function hapus($id)
+{
+  $db = koneksi();
+  mysqli_query($db, "DELETE FROM mahasiswa WHERE id = $id") or die(mysqli_error($db));
+  return mysqli_affected_rows($db);
+}
+
+function ubah($data)
+{
+  $db = koneksi();
+
+  $id = $data['id'];
+
+  $nama = htmlspecialchars($data['nama']);
+  $asal = htmlspecialchars($data['asal']);
+  $email = htmlspecialchars($data['email']);
+  $jurusan = htmlspecialchars($data['jurusan']);
+  $gambar = htmlspecialchars($data['gambar']);
+
+  $query = "UPDATE mahasiswa SET 
+           nama ='$nama',
+           asal ='$asal',
+           email ='$email',
+           jurusan ='$jurusan',
+           gambar = '$gambar'
+           WHERE id = $id";
+
+  mysqli_query($db, $query) or die(mysqli_error($db));
   return mysqli_affected_rows($db);
 }
