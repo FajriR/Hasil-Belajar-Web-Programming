@@ -19,7 +19,6 @@ if ( isset($_POST["Submit"])) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

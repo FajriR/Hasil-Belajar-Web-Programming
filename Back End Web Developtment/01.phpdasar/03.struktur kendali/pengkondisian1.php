@@ -15,7 +15,4 @@ if ( $x < 20) {
 } else {
     echo "salah";
 }
-
-
-
 ?>

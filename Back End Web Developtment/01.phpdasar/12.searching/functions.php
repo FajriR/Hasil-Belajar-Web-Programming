@@ -72,7 +72,6 @@ function ubah($data) {
 
 
 
-
 // function cari($keyword) {
 //     $query = "SELECT * FROM mahasiswa
 //              WHERE

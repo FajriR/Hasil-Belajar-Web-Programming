@@ -73,6 +73,7 @@
 <body>
     <h1> Halo, Selamat Datang <?php print $nama;?></h1>
     <p><?php  echo "ini adalah paragraf";?></p>
+    <br>
     
 </body>
 </html>

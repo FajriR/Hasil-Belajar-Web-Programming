@@ -33,6 +33,7 @@ if( isset($_POST["cari"])) {
             left: 250px;
             display:none;
         }
+        
     </style>
     
     <script src="js/jquery-3.6.0.min.js"></script>

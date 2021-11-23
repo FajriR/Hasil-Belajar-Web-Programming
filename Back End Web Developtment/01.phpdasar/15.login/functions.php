@@ -28,7 +28,6 @@ function tambah($data) {
     }
    
 
-      
     $query = "INSERT INTO  mahasiswa
      VALUES 
     ('', '$nama', '$asal', '$email', '$jurusan', '$gambar')

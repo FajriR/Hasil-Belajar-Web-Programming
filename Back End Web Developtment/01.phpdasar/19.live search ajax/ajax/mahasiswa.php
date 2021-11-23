@@ -25,6 +25,7 @@ $mahasiswa = query($query);
         <th>Jurusan</th>
     </tr>
 
+    
 <?php $nomor = 1; ?>
 <?php  foreach( $mahasiswa as $row ) : ?>
     <tr>
